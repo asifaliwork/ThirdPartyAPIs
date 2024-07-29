@@ -1,4 +1,5 @@
-using ThirdPartyAPIs.Services;
+using ThirdPartyAPIs.Services.Dummy;
+using ThirdPartyAPIs.Services.Weathers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +10,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IWeatherServices, WeatherServices>();
+builder.Services.AddScoped<IDummyServices, DummyServices>();
 builder.Services.AddHttpClient();
 var app = builder.Build();
 

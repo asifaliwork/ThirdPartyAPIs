@@ -1,6 +1,6 @@
-﻿using ThirdPartyAPIs.Models;
+﻿using ThirdPartyAPIs.Models.Weather.Weather;
 
-namespace ThirdPartyAPIs.Services
+namespace ThirdPartyAPIs.Services.Weathers
 {
     public interface IWeatherServices
     {

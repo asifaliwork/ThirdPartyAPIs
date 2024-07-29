@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ThirdPartyAPIs.Models;
-using ThirdPartyAPIs.Services;
+using ThirdPartyAPIs.Services.Weathers;
 
 namespace ThirdPartyAPIs.Controllers
 {
